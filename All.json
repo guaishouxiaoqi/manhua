@@ -40,46 +40,6 @@
     "weight": [1, 4, 7]
   },
   {
-    "bookSourceComment": "error:connect timed out\n",
-    "bookSourceGroup": "漫画",
-    "bookSourceName": "追漫画",
-    "bookSourceType": 2,
-    "bookSourceUrl": "https://www.zhuimh.com",
-    "bookUrlPattern": "",
-    "customOrder": -118191,
-    "enabled": true,
-    "enabledExplore": true,
-    "exploreUrl": "更新::https://www.zhuimh.com/custom/update\n排行::https://www.zhuimh.com/custom/top\n已完结::https://www.zhuimh.com/category/finish/2\n连载::https://www.zhuimh.com/category/finish/1\n国产::https://www.zhuimh.com/category/list/1\n日本::https://www.zhuimh.com/category/list/2\n分类::https://www.zhuimh.com/category/tags/{{page}}\n热血::https://www.zhuimh.com/category/tags/908搞笑::https://www.zhuimh.com/category/tags/902\n玄幻::https://www.zhuimh.com/category/tags/899\n都市::https://www.zhuimh.com/category/tags/870\n校园::https://www.zhuimh.com/category/tags/895\n悬疑::https://www.zhuimh.com/category/tags/900\n古风::https://www.zhuimh.com/category/tags/942\n科幻::https://www.zhuimh.com/category/tags/867\n运动::https://www.zhuimh.com/category/tags/1153\n萌系::https://www.zhuimh.com/category/tags/912\n恐怖::https://www.zhuimh.com/category/tags/910\n武侠::https://www.zhuimh.com/category/tags/947\n韩国::https://www.zhuimh.com/category/tags/990\n其他::https://www.zhuimh.com/category/tags/874",
-    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/16D57 UCBrowser/12.3.0.1138 Mobile AliApp(TUnionSDK/0.1.20.3)\"\n}",
-    "lastUpdateTime": 1621916079630,
-    "loginUrl": "",
-    "ruleBookInfo": {
-      "intro": "data.opusDetail.opusDesc",
-      "lastChapter": "data.opusDetail.lastItemTitle"
-    },
-    "ruleContent": {
-      "content": "$.data.jpgList.[*]url\n@js:\nlist=result.split(\"\\n\");\nhtml='';\nfor(i in list){\nhtml+='<img src=\"'+list[i]+'\">\\n'\n}\nhtml",
-      "imageStyle": "FULL"
-    },
-    "ruleExplore": {},
-    "ruleSearch": {
-      "author": "authorName",
-      "bookList": "data.comicResult.opusDetailList||data.opusList",
-      "bookUrl": "https://www.zhuimh.com/search?key={$.keyword}",
-      "coverUrl": "opusUrl",
-      "kind": "themeList..themeName",
-      "lastChapter": "lastItemName&&lastItemTitle",
-      "name": "opusName"
-    },
-    "ruleToc": {
-      "chapterList": "$.data.itemList",
-      "chapterName": "isFee&&itemName@js:result.replace(/^0/g,'').replace(/^1/g,'💲')",
-      "chapterUrl": "https://www.zhuimh.com?hwOpusId={$.hwOpusId}&index={$.itemIndex}&opusType={$.opusType}"
-    },
-    "searchUrl": "https://www.zhuimh.com/search?key={{key}}",
-    "weight": [1, 4, 7]
-  },
-  {
     "bookSourceComment": "error:Timed out waiting for 180000 ms\nerror:connect timed out\n",
     "bookSourceGroup": "漫画",
     "bookSourceName": "漫画人",
